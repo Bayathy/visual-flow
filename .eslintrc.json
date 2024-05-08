@@ -1,9 +1,22 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:eslint-plugin-next-on-pages/recommended"
+    "plugin:eslint-plugin-next-on-pages/recommended",
+    "plugin:eslint-plugin-tailwindcss/recommended"
   ],
-  "plugins": [
-    "eslint-plugin-next-on-pages"
-  ]
+  "plugins": ["eslint-plugin-next-on-pages", "unused-imports", "tailwindcss"],
+
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
 }

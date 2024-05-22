@@ -20,11 +20,6 @@
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "rete": "^2.0.3",
-    "rete-area-plugin": "^2.0.4",
-    "rete-connection-plugin": "^2.0.2",
-    "rete-react-plugin": "^2.0.5",
-    "rete-render-utils": "^2.0.2",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
